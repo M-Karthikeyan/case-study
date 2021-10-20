@@ -1,0 +1,42 @@
+2021-10-19 00:00:52,355 INFO tgt.csr.productservice.ProductserviceApplication [main] Starting ProductserviceApplication using Java 11.0.6.0.1 on MacC02YPFRTLVCG with PID 58812 (/Users/2149887/workspace/SampleProjects/productservice/target/classes started by 2149887 in /Users/2149887/workspace/SampleProjects/productservice)
+2021-10-19 00:00:52,357 INFO tgt.csr.productservice.ProductserviceApplication [main] No active profile set, falling back to default profiles: default
+2021-10-19 00:00:54,994 INFO tgt.csr.productservice.service.impl.ProductServiceImpl [main] Initial data load is completed
+2021-10-19 00:00:55,925 INFO tgt.csr.productservice.ProductserviceApplication [main] Started ProductserviceApplication in 3.983 seconds (JVM running for 4.786)
+2021-10-19 00:01:09,752 INFO tgt.csr.productservice.service.ExternalAPIService [http-nio-9090-exec-2] External service url - https://g97kr.mocklab.io/v1/products/13860428
+2021-10-19 00:01:10,159 INFO tgt.csr.productservice.service.ExternalAPIService [http-nio-9090-exec-2] Response from external service ProductDTO{data={"product":{"tcin":"13860428","item":{"product_description":{"title":"The Big Lebowski (Blu-ray)","downstream_description":"Jeff \"The Dude\" Lebowski (Bridges) is the victim of mistaken identity. Thugs break into his apartment in the errant belief that they are accosting Jeff Lebowski, the eccentric millionaire philanthropist, not the laid-back, unemployed Jeff Lebowski. In the aftermath, \"The Dude\" seeks restitution from his wealthy namesake. He and his buddies (Goodman and Buscemi) are swept up in a kidnapping plot that quickly spins out of control."},"enrichment":{"images":{"primary_image_url":"https://target.scene7.com/is/image/Target/GUEST_bac49778-a5c7-4914-8fbe-96e9cd549450"}},"product_classification":{"product_type_name":"ELECTRONICS","merchandise_type_name":"Movies"},"primary_brand":{"name":"Universal Home Video"}}}}, id=13860428, name='The Big Lebowski (Blu-ray)'}
+2021-10-19 00:01:12,758 INFO tgt.csr.productservice.service.ExternalAPIService [http-nio-9090-exec-3] External service url - https://g97kr.mocklab.io/v1/products/13860428
+2021-10-19 00:01:12,820 INFO tgt.csr.productservice.service.ExternalAPIService [http-nio-9090-exec-3] Response from external service ProductDTO{data={"product":{"tcin":"13860428","item":{"product_description":{"title":"The Big Lebowski (Blu-ray)","downstream_description":"Jeff \"The Dude\" Lebowski (Bridges) is the victim of mistaken identity. Thugs break into his apartment in the errant belief that they are accosting Jeff Lebowski, the eccentric millionaire philanthropist, not the laid-back, unemployed Jeff Lebowski. In the aftermath, \"The Dude\" seeks restitution from his wealthy namesake. He and his buddies (Goodman and Buscemi) are swept up in a kidnapping plot that quickly spins out of control."},"enrichment":{"images":{"primary_image_url":"https://target.scene7.com/is/image/Target/GUEST_bac49778-a5c7-4914-8fbe-96e9cd549450"}},"product_classification":{"product_type_name":"ELECTRONICS","merchandise_type_name":"Movies"},"primary_brand":{"name":"Universal Home Video"}}}}, id=13860428, name='The Big Lebowski (Blu-ray)'}
+2021-10-19 00:01:16,592 INFO tgt.csr.productservice.service.ExternalAPIService [http-nio-9090-exec-4] External service url - https://g97kr.mocklab.io/v1/products/13860428
+2021-10-19 00:01:16,651 INFO tgt.csr.productservice.service.ExternalAPIService [http-nio-9090-exec-4] Response from external service ProductDTO{data={"product":{"tcin":"13860428","item":{"product_description":{"title":"The Big Lebowski (Blu-ray)","downstream_description":"Jeff \"The Dude\" Lebowski (Bridges) is the victim of mistaken identity. Thugs break into his apartment in the errant belief that they are accosting Jeff Lebowski, the eccentric millionaire philanthropist, not the laid-back, unemployed Jeff Lebowski. In the aftermath, \"The Dude\" seeks restitution from his wealthy namesake. He and his buddies (Goodman and Buscemi) are swept up in a kidnapping plot that quickly spins out of control."},"enrichment":{"images":{"primary_image_url":"https://target.scene7.com/is/image/Target/GUEST_bac49778-a5c7-4914-8fbe-96e9cd549450"}},"product_classification":{"product_type_name":"ELECTRONICS","merchandise_type_name":"Movies"},"primary_brand":{"name":"Universal Home Video"}}}}, id=13860428, name='The Big Lebowski (Blu-ray)'}
+2021-10-19 00:05:28,362 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [ch.qos.logback.core.rolling.ConsoleAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ch.qos.logback.core.rolling.ConsoleAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@24:82 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ch.qos.logback.core.rolling.ConsoleAppender
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at tgt.csr.productservice.ProductserviceApplication.main(ProductserviceApplication.java:15)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [ch.qos.logback.core.rolling.ConsoleAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ch.qos.logback.core.rolling.ConsoleAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@24:82 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type ch.qos.logback.core.rolling.ConsoleAppender
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
