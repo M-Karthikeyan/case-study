@@ -44,5 +44,5 @@ It contains 3 projects:
  ```
  
  ``` sql
- CREATE TABLE price (product_id bigint primarykey, price float, currency varchar);
+ CREATE TABLE price (product_id bigint PRIMARY KEY, price float, currency varchar);
  ```
