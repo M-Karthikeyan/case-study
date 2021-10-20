@@ -1,7 +1,7 @@
 # Case study - myRetailService
 
 It contains 3 projects:
-- **productService** - It runs on port ```9090``` and supports below operations:
+- **product-Service** - It runs on port ```9090``` and supports below operations:
   - Retrive product details : Here is the ```GET``` url to retrieve product details ```http://localhost:9090/products/{productid}```, and below is the screenshot from postman
   
   ![image](https://user-images.githubusercontent.com/92587371/138080915-4dbf1587-35ac-4cdc-b282-c8bd2678318a.png)
